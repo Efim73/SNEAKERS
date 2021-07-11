@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: white;
+}
+
+header img {
+    width: 55px;
+    display: inline-block;
+    width: 50px;
+    filter: invert(100%);
+    margin-left: 20px;
+}
+
+.img2 img {
+    float: right;
+    width: 60px;
+}
+
+.img0 {
+    float: left;
+}
+
+.img1 img {
+    width: 70px;
+}
+
+header {
+    background-color: black;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    border-bottom: 2px solid white;
+    z-index: 9999;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 540px;
+    height: 330px;
+    object-fit: cover;
+    line-height: center;
+    margin-bottom: 0px;
+
+
+
+}
+
+#sectionTitle1 {
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 60px;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.card {
+    width: 650px;
+    background-color: black;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    height: 520px;
+    /* padding-bottom: 30px; */
+    z-index: 999;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+.card h4 {
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 9999;
+
+}
+.card h5 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+
+    z-index: 9999;
+}
+
+
+
+.card h3 {
+    font-size: 60px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 9999;
+    border-top: 1px solid white;
+}
+
+.menu p img {
+    width: 30px;
+    margin-right: 10px;
+    background: none;
+    filter: invert(100%);
+}
+
+.menu p {
+    margin-left: 10px;
+}
+
+
+
+.menu h3 {
+    font-size: 50px;
+    color: white;
+    padding-left: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu p {
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.firstColumn {
+    display: inline-block;
+    margin-left: 330px;
+    width: 400px;
+    right: 0;
+    background-color: black;
+}
+
+.secondColumn {
+    float: right;
+    background-color: black;
+    left: 0;
+    margin-right: 223px;
+    width: 300px;
+}
+.cards{
+    width: 650px;
+    background-color: black;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    height: 590px;   
+}
+.cards h3{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    border-top: 1px solid white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid white;
+    width: 100%;
+}
+.cards img{
+    width: 540px;
+    height: 400px;
+    object-fit: cover;
+    line-height: center;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+.cards h4{
+    
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+.cards h5{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+#first{
+    width: 1504px;
+}
+#second{
+    width: 1504px;
+}
+.main h3{
+    font-size: 90px ;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.main img{
+    width: 800px;
+    margin:  20px 15px ;
+
+}
+.main h4{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 10px;
+}
+.main div{
+    background-color: black;
+    width: 830px;
+    padding:  0 40px;
+    margin:   50px auto ;
+    overflow: hidden;
+
+}
+.main a{
+    width: 50px;
+    height: 40px;
+    color: white;
+    background: black;
+    border: 1px solid #444444;
+    padding: 10px 5px;
+    margin-left: 14px;
+    font-family: 'Roboto Mono', monospace;
+    transition: 0.3s;
+}
+.main a:hover{
+    background: #222222;
+    border: 1px solid #333333;
+}
+.main .div1{
+    height: 595px;
+}
+.cardd #img{
+    height: 400px;
+}
+.lastDiv{
+    background-color: black;
+    width: 830px;
+    padding:  0 40px;
+    margin:   50px auto ;
+    height: 790px;
+    overflow: hidden;
+}
+.lastDiv img{
+    height: 580px;
+    object-fit: cover;
+}
+.firstDiv{
+    height: 630px;
+}
+.secondDiv{
+    height: 600px;
+}
+.slider .sliderDiv img{
+    width: 50%;
+    float: right;
+    height: 500px;
+    object-position: center;
+
+    object-fit: cover;
+    
+}
+.slider .sliderDiv{
+    background-color: gray;
+    position: absolute;
+    height: 400px;
+    overflow: hidden;
+
+    opacity: 0;
+    transition: 1s;
+
+}
+.slider .active{
+    opacity: 1;
+}
+.slider{
+    /* width: 303%; */
+    margin-top: 62px;
+}
+.slider .sliderDiv h4{
+    font-size: 50px;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 60px;
+    margin-left: 200px;
+    text-align: center;
+    text-align: left;
+    /* background-color: tomato; */
+
+}
+.slider .sliderDiv a{
+    color: white;
+    padding: 7px;
+    background: #777777;
+    border: 1px solid #777777;
+    line-height: 40px;
+    margin-left: 200px;
+    margin-top: 40px;
+    float: left;
+    transition: 0.3s;
+}
+.slider .sliderDiv a:hover{
+    background: #555555;
+    border: 1px solid #333;
+}
+
+.sliderInfo{
+    float: left;
+    width: 50%;
+    /* background-color: thistle; */
+}
+.sneakersDiv{
+
+    top: 0%;
+    /* margin-top: 606px;s */
+
+    z-index: 3;
+    opacity: 0;
+    width: 650px;
+    height: 99px;
+
+}
+
+.sneakersDiv h6{
+    font-size: 15px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.sneakersDiv:hover{
+    opacity: 1;
+    /* background-color: black; */
+
+}
+
+.sneakersDiv a{
+    width: 30px;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    transition: 0.3s;
+}
+.sneakersDiv a:hover{
+    background: #555555;
+    border: 1px solid #333333;
+}
+.infoText{
+    margin-top: 40px;
+}
