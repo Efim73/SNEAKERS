@@ -13,23 +13,37 @@
     <div class="container">
         <div class="allInformation">
             <div class="photos">
-                <img src="nike6-3.jpg" alt="">
-                <img src="nike6-2.jpg" alt="">
-                <img src="nike6-1.jpg" alt="">
-                <img src="nike6-0.jpg" alt="">
+                <a href="#/">
+                    <img src="nike6-1.jpg" alt="">
+                </a>
+                <a href="#/" id="nike1">
+                    <img src="nike6-2.jpg" alt="">
+                </a>
+                <a href="#/">
+                    <img src="nike6-3.jpg" alt="">
+                </a>
+                <a href="#/">
+                    <img src="nike6-0.jpg" alt="">
+                </a>
                 <img class="upload" src="upload.svg" alt="">
             </div>
             <div class="productSlider">
+                <div class="slider">
+                    <img src="nike6-0.jpg" alt="">
+                    <img src="nike6-1.jpg" alt="">
+                    <img src="nike6-2.jpg" alt="">
+                    <img src="nike6-3.jpg" alt="">
+                </div>
                 <div class="buttons">
-                    <a href="" class="leftButton">
+                    <a href="#/" class="leftButton">
                         <img src="rightArrow.svg" alt="">
                     </a>
-                    <a href="" class="rightButton">
+                    <a href="#/" class="rightButton">
                         <img src="rightArrow.svg" alt="">
                     </a>
                 </div>
 
-                <img src="nike6-3.jpg" alt="">
+                <!-- <img src="nike6-3.jpg" alt=""> -->
             </div>
             <div class="productInformation">
                 <h2>Nike Air Max Furyosa Silver and Blac</h2>
@@ -56,28 +70,134 @@
                 </div>
                 <div class="addLike">
                     <a href="" class="add">ДОБАВИТЬ В КОРЗИНУ</a>
-                    <a href="" class="like">
+                    <!-- <a href="" class="like"> -->
 
 
-                        <label for="check">
 
-                            <div for="check" >
-                                <input id='check' type="checkbox">
-                                <img src="heart.svg" alt="" class="red">
-                                <img src="like.svg" alt="" class="black"> <!-- чб -->
-                            </div>
-                        </label>
+                    <!-- <div for="check"> -->
+                    <input id='check' type="checkbox">
+                    <label for="check">
+                        <img src="heart.svg" alt="" class="red">
+                        <img src="like.svg" alt="" class="black"> <!-- чб -->
+                    </label>
+                    <!-- </div> -->
 
-                        
-                        <!-- <img src="like.svg" alt="" class="like"> -->
-                    </a>
+
+                    <!-- <img src="like.svg" alt="" class="like"> -->
+                    <!-- </a> -->
                 </div>
+                <h7 class="sneakersInfo">В новой версии эстетика Air Max 90-х сочетается с технологиями XXI века.
+                    Асимметричная двойная подушка Air в области пятки обеспечивает непревзойденную амортизацию, а мягкий
+                    бортик и язычок с супермягкой подкладкой обеспечивают комфорт на протяжении всего дня. Стильная
+                    двойная система шнуровки дает тебе простор для самовыражения.</h7>
 
 
             </div>
         </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <a href="">Кроссовки Nike</a>
+            <ul>
+                <li>лрщпеерлнрнекопооопопоп</li>
+                <li>лрщпеерлнрнекопооопопоп</li>
+                <li>лрщпеерлнрнекопооопопоп</li>
+                <li>лрщпеерлнрнекопооопопоп</li>
+            </ul>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
 
     </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        let right = document.getElementsByClassName('rightButton')[0]
+        let nike1 = document.getElementById('nike1')
+        console.log(right);
+        let slider = document.getElementsByClassName('slider')[0]
+        let counter = 0
+        let photos = document.getElementsByClassName('photos')[0]
+        // photos.children.forEach(element => {
+        //     console.log(element)
+        // });
+            for(let photo of photos.children){
+                photo.onclick = function(){
+                    console.log(photos.indexOf(photo));
+                    
+                }
+            }
+        let imgs = [
+            'nike6-0.jpg',
+            'nike6-1.jpg',
+            'nike6-2.jpg',
+            'nike6-3.jpg'
+        ]
+        let left = document.getElementsByClassName('leftButton')[0];
+        function refreshImg() {
+            for (let i = 0; i < 4; i = i + 1) {
+                console.log(slider.children[1].src);
+                slider.children[i].src = imgs[(i + counter) % 4]
+            }
+        }
+        nike1.onclick = function() {
+            console.log(80);
+            counter=1;
+            refreshImg();
+
+
+
+        }
+        // refreshImg();
+        left.onclick = function () {
+            console.log(8);
+            counter = counter-1;
+            if(counter<0){
+                counter=3
+            }
+            slider.style.transform = 'translateX(+0%)'
+            setTimeout(function () {
+                refreshImg()
+                slider.style.transition = '0s'
+                slider.style.transform = 'translateX(-100%)'
+
+
+            },300)
+            slider.style.transition = '0.3s'
+            
+        }
+        right.onclick = function () {
+            console.log(564);
+            slider.style.transform = 'translateX(-200%)'
+            counter = counter + 1;
+            setTimeout(function () {
+                refreshImg()
+                slider.style.transition = '0s'
+                slider.style.transform = 'translateX(-100%)'
+
+            }, 300)
+            slider.style.transition = '0.3s'
+
+
+        }
+    </script>
 </body>
 
 </html>

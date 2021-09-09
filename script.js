@@ -1,8 +1,4 @@
-
-
 slideshow();
-
-
 function slideshow() {
     console.log(789);
     let active = document.getElementsByClassName('active')[0];

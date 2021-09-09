@@ -1,202 +1,239 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.allInformation{
-    position: relative;
 
-    overflow: hidden;
+.allInformation {
+    position: relative;
+    /* overflow: hidden; */
 }
-.photos .upload{
+
+.photos .upload {
     width: 20px;
     display: inline-block;
     position: absolute;
     bottom: 0;
     left: 65px;
 }
-.container{
+
+.container {
     width: 70%;
     margin: auto;
-
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.photos img{
+
+.photos img {
     width: 50px;
     display: block;
     width: 100%;
     transition: 0.3s;
+    height: 170px;
 }
-.photos img:hover{
 
+.photos img:hover {
     opacity: 0.8;
-
-
 }
-.photos{
+
+.photos {
     float: left;
     width: 150px;
-
+    height: 100%;
 }
-.productSlider{
 
+.productSlider {
     float: left;
     width: calc(60% - 150px);
     position: relative;
+    overflow: hidden;
+    height: 7%;
 }
-.productInformation{
+.slider{
+    white-space: nowrap;
+    font-size: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.productInformation {
     float: left;
-
     opacity: 1;
     width: 40%;
 }
-.productSlider img{
+
+.productSlider img {
     width: 100%;
 }
-.like{
+
+.like {
     width: 30px;
 }
-.productInformation h2{
+
+.productInformation h2 {
     width: 90%;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     margin-top: 40px;
     font-size: 40px;
 }
-.productInformation h3{
-    font-size:  30px;
+
+.productInformation h3 {
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     margin: 28px;
 }
-.productInformation p{
+
+.productInformation p {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     margin-top: 28px;
     margin-left: 28px;
     margin-right: 26px;
     width: 70%;
-
 }
-.productInformation .size{
+
+.productInformation .size {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     width: 15%;
     display: inline-block;
 }
-.productInformation .divSizeInput .sizeInput{
+
+.productInformation .divSizeInput .sizeInput {
     display: inline-block;
-
 }
-.divSizeInput{
 
+.divSizeInput {
     display: inline-block;
     position: relative;
 }
-.divSizeInput img{
-    width: 10px;
 
+.divSizeInput img {
+    width: 10px;
     position: absolute;
     transform: rotate(90deg);
     background-color: brown;
     right: 0;
 }
-/* .productInformation a{
+
+
+
+.addLike {
     display: block;
-} */
-.addLike{
-    display: block;
+
 }
-.buttons{
+
+.buttons {
     height: 50px;
     position: absolute;
+    top: 0;
     width: 100%;
-
     height: 100%;
-
 }
-.buttons img{
+
+.buttons img {
     width: 50px;
     height: 100%;
     opacity: 0.3;
     transition: 0.3s;
 }
-.buttons img:hover{
+
+.buttons img:hover {
     opacity: 1;
 }
-.rightButton{
+
+.rightButton {
     float: right;
     display: inline-block;
     height: 100%;
 }
-.buttons .leftButton{
+
+.buttons .leftButton {
     transform: rotate(180deg);
     display: inline-block;
-
     height: 100%;
 }
 
-label img{
+label img {
     width: 40px;
     position: absolute;
     left: 15px;
-    top: 15px;
-    top: 0;
+    top: 5px;
+    left: 5px;
 }
-.red{
+
+.red {
     opacity: 0;
 }
-#check:checked~label .red::before{
+
+#check:checked~label .red {
     opacity: 1;
 }
-#check:checked~label .black{
+
+/* #check:checked~label .black {
     opacity: 0;
-}
-label{
+} */
+
+label {
     height: 50px;
     width: 50px;
     display: inline-block;
     position: relative;
+
+    vertical-align: middle;
 }
 
-
-#check{
+#check {
     opacity: 1;
+    display: none;
 }
-.add{
-    width:  calc(36% + 3px);
+
+.add {
+    width: calc(36% + 3px);
     background-color: black;
     color: white;
-    padding: 20px 30px;
+    padding: 10px 30px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-left: 32px;
-    margin-top: 28px;
-    border-radius: 30px;
+    /* margin-top: 28px; */
+    border-radius: 40px;
+    line-height: 30px;
     transition: 0.3s;
+    display: inline-block;
+    vertical-align: middle;
+    
 }
-.add:hover{
+
+.add:hover {
     background: #333333;
 }
-.label{
-    display: inline-block;
-    width: 400px;
-    background-color: blue;
-}
-.like{
+
+
+
+.like {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: white;
+}
 
+.like img:first-child {
+    /* filter: invert(100%); */
 }
-.like img:first-child{
-    filter: invert(100%);
-}
-select{
+
+select {
     border: 1px solid black;
     display: inline-block;
     height: 23px;
     width: 230%;
     left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
+.sneakersInfo {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 28px;
+    width: 60%;
+}
