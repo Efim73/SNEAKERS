@@ -25,7 +25,9 @@
                 <a href="#/">
                     <img src="nike6-0.jpg" alt="">
                 </a>
-                <img class="upload" src="upload.svg" alt="">
+                <a href="">
+                    <img class="upload" src="upload.svg" alt="">
+                </a>
             </div>
             <div class="productSlider">
                 <div class="slider">
@@ -94,39 +96,70 @@
 
             </div>
         </div>
-        <div>
-            <h3>Информация о товаре</h3>
+
+    </div>
+
+    <div class="info">
+        <div id="infoFirst">
+            <h3 class="infoH3">О товаре</h3>
             <a href="">Кроссовки Nike</a>
             <ul>
-                <li>лрщпеерлнрнекопооопопоп</li>
-                <li>лрщпеерлнрнекопооопопоп</li>
-                <li>лрщпеерлнрнекопооопопоп</li>
-                <li>лрщпеерлнрнекопооопопоп</li>
+                <li>Разбавь свой привычный гардероб</li>
+                <li>Двойная подошва</li>
+                <li>Одна из новейших моделий</li>
+                <li>Шнуровка вдоль кроссовка</li>
+                <li>Мягкий boost</li>
+                <li>Технология Air Max</li>
             </ul>
-            
         </div>
-        <div>
-            <h3>Информация о товаре</h3>
-            <p></p>
-            
+
+        <div id="infoSecond">
+            <h3 class="infoH3">Nike Air Max Furyosa</h3>
+            <p>Furyosa по названию близок к грядущему приквелу фильма «Безумный Макс», получившему название
+                «Фуриоза» ,
+                и
+                хотя это совершенно случайно, дизайн определенно не будет выглядеть неуместным в мире Безумного
+                Макса.
+                Его
+                самая заметная особенность — двойные вставки Air в пятке, каждая из которых окружена собственным
+                кожухом
+                из
+                пены EVA. Этот стиль с двойным составом не связан напрямую с передней частью мидсола, что
+                обеспечивает
+                высокий вид.
+                Подробнее на samoform.ru - Футуристичная модель Nike Air Max Furyosa</p>
         </div>
-        <div>
-            <h3>Информация о товаре</h3>
-            <p></p>
-            
-        </div>
-        <div>
-            <h3>Информация о товаре</h3>
-            <p></p>
-            
-        </div>
-        <div>
-            <h3>Информация о товаре</h3>
-            <p></p>
-            
+        <div id="infoThird">
+            <h3 class="infoH3">Уход</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, iusto! Inventore magni ipsum
+                obcaecati. Labore placeat illo amet rerum corrupti molestias et atque alias, voluptatum soluta suscipit,
+                quas quam sit?</p>
         </div>
 
     </div>
+
+    <!-- <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div>
+        <div>
+            <h3>Информация о товаре</h3>
+            <p></p>
+            
+        </div> -->
+
+
     <!-- <script src="script.js"></script> -->
     <script>
         let right = document.getElementsByClassName('rightButton')[0]
@@ -138,12 +171,13 @@
         // photos.children.forEach(element => {
         //     console.log(element)
         // });
-            for(let photo of photos.children){
-                photo.onclick = function(){
-                    console.log(photos.indexOf(photo));
-                    
-                }
+        for (let photo of photos.children) {
+            photo.onclick = function () {
+                console.log(Array.prototype.indexOf.call(photos.children, photo));
+                counter = Array.prototype.indexOf.call(photos.children, photo)
+                refreshImg();
             }
+        }
         let imgs = [
             'nike6-0.jpg',
             'nike6-1.jpg',
@@ -157,20 +191,21 @@
                 slider.children[i].src = imgs[(i + counter) % 4]
             }
         }
-        nike1.onclick = function() {
-            console.log(80);
-            counter=1;
-            refreshImg();
+        // nike1.onclick = function () {
+        //     console.log(80);
+        //     counter = 1;
+        //     refreshImg();
 
 
 
-        }
+
+        // }
         // refreshImg();
         left.onclick = function () {
             console.log(8);
-            counter = counter-1;
-            if(counter<0){
-                counter=3
+            counter = counter - 1;
+            if (counter < 0) {
+                counter = 3
             }
             slider.style.transform = 'translateX(+0%)'
             setTimeout(function () {
@@ -179,9 +214,9 @@
                 slider.style.transform = 'translateX(-100%)'
 
 
-            },300)
+            }, 300)
             slider.style.transition = '0.3s'
-            
+
         }
         right.onclick = function () {
             console.log(564);

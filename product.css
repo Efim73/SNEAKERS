@@ -6,14 +6,17 @@
 .allInformation {
     position: relative;
     /* overflow: hidden; */
+    margin-top: 100px;
 }
 
 .photos .upload {
     width: 20px;
     display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 65px;
+    /* position: absolute; */
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 20px;
+
 }
 
 .container {
@@ -45,6 +48,7 @@
     width: calc(60% - 150px);
     position: relative;
     overflow: hidden;
+
     height: 7%;
 }
 .slider{
@@ -71,7 +75,6 @@
     width: 90%;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 40px;
     font-size: 40px;
 }
 
@@ -201,6 +204,7 @@ label {
     transition: 0.3s;
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 30px;
     
 }
 
@@ -236,4 +240,39 @@ select {
     font-family: 'Open Sans', sans-serif;
     margin-left: 28px;
     width: 60%;
+    margin-bottom: 30px;
+}
+
+
+
+#infoFirst li{
+    line-height: 30px;
+    margin-left: 15px;
+}
+.info p{
+    line-height: 30px;
+}
+.info{
+    width: 70%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.info div{
+    display: inline-block;
+    width: 30%;
+    top: 0px;vertical-align: top;
+
+}
+
+.infoH3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+#infoFirst a{
+    color: black;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+#infoFirst li:last-child{
+    padding-bottom: 150px ;
 }
